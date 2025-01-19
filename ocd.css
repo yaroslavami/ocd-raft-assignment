@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+    width: 6px;
+    height: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #032B44;
+    /* Navy blue */
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #cccccc;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -62,6 +77,9 @@ body {
 }
 
 .main-content section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 3% 13%;
     border-radius: 15px;
     padding: 2% 10%;
@@ -86,20 +104,76 @@ p {
     padding: 1%;
     margin-bottom: 20px;
 }
+.myths-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-.image-placeholder {
-    width: 100%;
-    height: 200px;
+.myths-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.myths-list li::before {
+    content: "\1F4A1";
+    /* lamp icon */
+    font-size: 26px;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+}
+.famous-people-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.famous-people-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.famous-people-list li::before {
+    content: "\2605";
+    /* star icon */
+    font-size: 24px;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+}
+.intro, .brain{
     border-radius: 5px;
-    background-color: #ccc;
-    /* Light gray image placeholder background color */
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* Black shadow */
-    margin-bottom: 40px;
+    max-width: 300px;
+    max-height: 300px;
+}
+.statistics-wrapper, .intro-wrapper,.prevalence-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.medication-wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.men-vs-woman, .ocd-treatment{
+    max-width: 340px;
+    height: auto;
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #1A1D23;
     /* Dark navy blue footer background color */
     padding: 20px;
