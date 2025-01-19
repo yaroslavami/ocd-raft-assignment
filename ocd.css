@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /* White background color */
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #032B44;
+    /* Navy blue side menu background color */
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.2);
+    /* Black shadow */
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.side-menu li {
+    margin-bottom: 10px;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: #fff;
+    /* White link color */
+    padding: 10px;
+    display: block;
+}
+
+.side-menu a:hover {
+    color: #ccc;
+    border-radius: 8px;
+    /* Light gray hover link color */
+    background-color: #1A1D23;
+    /* Dark navy blue hover background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Black shadow */
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 220px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    /* White main content background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Black shadow */
+}
+
+.main-content section {
+    margin: 3% 13%;
+    border-radius: 15px;
+    padding: 2% 10%;
+    margin-bottom: 40px;
+    background-color: #ADD8E6;
+    /* Light blue section background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Black shadow */
+}
+
+h1,
+h2,
+h3 {
+    color: #032B44;
+    /* Navy blue heading color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #1f1f1f;
+    padding: 1%;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    background-color: #ccc;
+    /* Light gray image placeholder background color */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Black shadow */
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #1A1D23;
+    /* Dark navy blue footer background color */
+    padding: 20px;
+    text-align: center;
+    clear: both;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Black shadow */
+}
+
+footer p {
+    color: #fff;
+    /* White footer paragraph color */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+footer nav a {
+    color: #fff;
+    /* White link color */
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    color: #ccc;
+    /* Light gray hover link color */
+    background-color: #032B44;
+    /* Navy blue hover background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Black shadow */
+}
+
+/*References section*/
+#references {
+    padding: 2% 10%;
+    margin-bottom: 40px;
+    background-color: #ADD8E6;
+    /* Light blue section background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Black shadow */
+}
+
+#references h2 {
+    color: #032B44;
+    /* Navy blue heading color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#references ol {
+    list-style: decimal;
+    padding: 3%;
+    margin: 0;
+}
+
+#references li {
+    margin-bottom: 10px;
+}
+
+#references a {
+    text-decoration: none;
+    color: #504b4b;
+    /* Dark gray link color */
+}
+
+#references a:hover {
+    color: #ccc;
+    /* Light gray hover link color */
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .side-menu ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .side-menu li {
+        margin-bottom: 10px;
+    }
+
+    .side-menu a {
+        padding: 10px;
+        display: block;
+    }
+
+    .main-content section {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
